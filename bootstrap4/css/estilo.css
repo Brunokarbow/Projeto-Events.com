@@ -4,6 +4,21 @@ body {
 
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+	width: 3px;
+	background-color: rgb(32,32,32);
+
+}
+
+::-webkit-scrollbar-thumb{
+	background:  #3533cd ;
+	border-radius: 10px;
+}
+
 nav{
 	background-image: linear-gradient(to left, #3533cd, #000000);
 }
@@ -120,17 +135,22 @@ nav{
 #foto-user {
 	position: relative;
 	width: 60px;
+	bottom: 1px;
+	
+	
 }
+
+
 
 #titulo-user {
 		
 	position: relative;
-	left: 2px;
-	top: 3px;
+	left: 1px;
+	top: 1px;
 	font-weight: bold;
 	color: white;
-
 	
+		
 }
 
 
@@ -144,10 +164,13 @@ nav{
  #seta-a{
 	
 	margin: 10px;
+	width: 400px;
 	height: 88px;
 	position: relative;
-	left: 1px;
-	top: 25px;
+	left: 120px;
+	top: -14px;
+	
+	
 	
 	
 }
@@ -155,7 +178,6 @@ nav{
 #foto-user, #titulo-user, #seta {
 	display: inline-block;
 }
-
 
 
 
@@ -173,35 +195,35 @@ nav{
                   width:100%;
                   height: 50px;
                   text-align: center;
-
                   
 
                 }
 
                 #seta {
 								  position: relative;
-								  top: -52px;
-								  left: 140px;	
+								  top: 7px;
+								  left: 1px;	
 								  padding: 10px;
 								  margin: 8px;
 								  box-shadow: 3.5px -3.5px 0 1px #fff inset;
 								  border: solid transparent;
 								  border-width: 1px 0 0px 1px;
 								  transform: rotate(-45deg);
+								 
+								 
+								  
 
 								}
 
 
-                .main-menu{
+                 .main-menu{
 
                 	position: relative;
-                	top: 10px;
-                	width: 215px;
-                  text-align: left;
-                  display: inline-block;
-                  
-
-                 
+                	top: 40px;
+                	width: 360px;
+                  	text-align: left;
+                  	display: inline-block;
+					
                   
                 }
 
@@ -796,6 +818,10 @@ footer ul li {
 
 @media (max-width: 575.98px) { 
 
+		#img-contato{
+			display: none;
+		}
+
 		#footer-2 {
 				position: relative;
 				top: 30px;
@@ -928,13 +954,144 @@ footer ul li {
 			position: relative;
 			left: 95px;
 			width: 300px;}
+
+			#nav-link-index{
+
 			
+			position: relative;
+			width: 50px;
+			left: 210px;
+
+		}
+
+		#btn-1 {
+			position: relative;
+			left: 80px;
+			top: 250px;
+		}
+
+		#btn-2{
+			position: relative;
+			right: 20px;
+			top: 200px;
+		}
 
 
- }
+	 .divisor-descricao{
+		position: relative;
+		top: 40px;
+		right: 61px;
+		
+	}
+
+	#container-descricao,  .divisor-descricao {
+	  
+	  display: flex;
+	  flex-direction: column;
+	  display: table;
+	} 
+
+	#desc-texto {
+		
+		display: grid;
+		grid-template-columns: 460px 100px;
 
 
+	}
+
+	#container-price{
+		
+		display: grid;
+		grid-template-columns: 200px 100px;
+		height: 80px;
+
+	}
+
+	.coracao {
+		
+		position: relative;
+		left: 140px;
+		top: -54px;
+
+
+		
+	}
+
+	#area-main{
+		
+		letter-spacing: -1px;
+	}
+
+
+	.card-img-chacaras-main{
+			display: none;
+	}
+
+
+
+
+
+	  .card-img-chacaras,
+	  .card-img-chacaras-2,
+	  .card-img-chacaras-4 {
+	    width: 400px !important;  /* Mantém 100% da largura na resolução menor */
+	    height: 200px !important;
+	  
+
+	    
+	  }
+
+	 /* Remova as margens dos marcadores */
+	.marcador {
+			width: 260px !important;
+		
+	  }
+
+	    
+
+	/* Remova os estilos de largura específicos das colunas do Bootstrap */
+	.col-md-6 {
+	  flex-basis: auto !important;
+	  max-width: none !important;
+	}
+
+	/* Use flex para dispor as imagens em linha */
+	#container-imgs .row {
+	  display: flex;
+	  flex-wrap: nowrap; /* Impede que as imagens quebrem para uma nova linha */
+	  overflow-x: scroll; /* Adiciona scroll horizontal se necessário */
+	  
+
+
+	}
+
+	::-webkit-scrollbar{
+		
+		background-color: rgb(32,32,32);
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 8px;
+
+	}
+
+	::-webkit-scrollbar-thumb{
+		background:  #3533cd ;
+			
+	}
+
+
+	#seta-a{
+		position: relative;
+		left: 1px;
+		top: 20px;
+	}
+
+} 
+				
 @media (min-width: 576px) and (max-width: 767.98px) { 
+
+	#img-contato{
+			display: none;
+		}
 
 	#footer-2 {
 				position: relative;
@@ -1006,7 +1163,7 @@ footer ul li {
 		}
 
 		.menu-dropdown{
-			border: solid 1px red;
+			
 			width: 50px;
 			position: relative;
 			right: 100px;
@@ -1071,11 +1228,146 @@ footer ul li {
 			right: -20px;
 		}
 
+		#nav-link-index{
 
- }
+			position: relative;
+			width: 50px;
+			left: 210px;
+
+		}
+
+		#btn-1 {
+			position: relative;
+			left: 80px;
+			top: 200px;
+		}
+
+		#btn-2{
+			position: relative;
+			right: 20px;
+			top: 155px;
+		}
+
+		#btn-3 {
+			position: relative;
+			right: 60px;
+			
+		}
+
+		.divisor-descricao{
+	position: relative;
+	top: 40px;
+	right: 61px;
+	
+	}
+
+	#container-descricao,  .divisor-descricao {
+	  
+	  display: flex;
+	  flex-direction: column;
+	  display: table;
+	} 
+
+	#desc-texto {
+		
+		display: grid;
+		grid-template-columns: 460px 100px;
+
+
+	}
+
+	#container-price{
+		
+		display: grid;
+		grid-template-columns: 200px 100px;
+		height: 80px;
+
+	}
+
+	.coracao {
+		
+		position: relative;
+		left: 185px;
+		top: -60px;
+
+
+		
+	}
+
+	#area-main{
+		
+		letter-spacing: -1px;
+	}
+
+
+	.card-img-chacaras-main{
+			display: none;
+	}
+
+
+
+
+
+	  .card-img-chacaras,
+	  .card-img-chacaras-2,
+	  .card-img-chacaras-4 {
+	    width: 400px !important;  /* Mantém 100% da largura na resolução menor */
+	    height: 200px !important;
+	  
+
+	    
+	  }
+
+	 /* Remova as margens dos marcadores */
+	.marcador {
+			width: 260px !important;
+		
+	  }
+
+	    
+
+	/* Remova os estilos de largura específicos das colunas do Bootstrap */
+	.col-md-6 {
+	  flex-basis: auto !important;
+	  max-width: none !important;
+	}
+
+	/* Use flex para dispor as imagens em linha */
+	#container-imgs .row {
+	  display: flex;
+	  flex-wrap: nowrap; /* Impede que as imagens quebrem para uma nova linha */
+	  overflow-x: scroll; /* Adiciona scroll horizontal se necessário */
+	  
+
+
+	}
+
+	::-webkit-scrollbar{
+		
+		background-color: rgb(32,32,32);
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 8px;
+
+	}
+
+	::-webkit-scrollbar-thumb{
+		background:  #3533cd ;
+			
+	}
+
+
+
+
+
+
+	 }
 
  
 @media (min-width: 576px) and (max-width: 633.98px) { 
+
+	#img-contato{
+			display: none;
+		}
 
 	#footer-2 {
 				position: relative;
@@ -1136,6 +1428,11 @@ footer ul li {
 			position: relative;
 			left: 480px;
 			top: -30px;
+		}
+
+		#seta-a{
+		position: relative;
+		left: 10px;
 		}
 
  }
@@ -1203,68 +1500,113 @@ footer ul li {
 			top: -33px;
 		}
 
+		#nav-link-index{
+
 		
-
-
-		/*
-		#card-1{
 			position: relative;
-			left: -10px;
+			width: 50px;
+			left: 210px;
 
 		}
 
-		#card-2{
+		#btn-1 {
 			position: relative;
-			left: 240px;
-			top: -406.5px;
+			left: 80px;
+			top: 200px;
 		}
 
-		#card-3{
+		#btn-2{
 			position: relative;
-			left: 490px;
-			top: -894px;
+			right: 20px;
+			top: 155px;
 		}
 
-		#card-4{
+		#btn-3{
 			position: relative;
-			left: -10px;
-			top: -800px;
+			right: 60px;
+			
 		}
 
-		#card-5{
-			position: relative;
-			left: 240px;
-			top: -1383px;
-		}
-
-		#card-6{
-			position: relative;
-			left: 490px;
-			top: -1869px;
-		}
-
-		#card-7{
-			position: relative;
-			left: 120px;
-			top: -1800px;
-		}
-
-		#card-8{
-			position: relative;
-			left: 380px;
-			top: -2287px;
-		}
-
-	*/
-
+			.divisor-descricao{
+	position: relative;
+	top: 40px;
+	right: -10px;
 	
+	}
 
-		
-
-
+	#container-descricao,  .divisor-descricao {
+	  
+	  display: flex;
+	  flex-direction: column;
+	  display: table;
 	} 
 
-@media (min-width: 768px) and (max-width: 991.99px) { 
+	#desc-texto {
+		
+		display: grid;
+		grid-template-columns: 650px 80px;
+
+
+	}
+
+	#container-price{
+		
+		display: grid;
+		grid-template-columns: 200px 100px;
+		height: 80px;
+
+	}
+
+	.coracao {
+		
+		position: relative;
+		left: 370px;
+		top: -60px;
+
+
+		
+	}
+
+	#area-main{
+		
+		letter-spacing: -1px;
+	}
+
+	/
+
+	::-webkit-scrollbar{
+		
+		background-color: rgb(32,32,32);
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 8px;
+
+	}
+
+	::-webkit-scrollbar-thumb{
+		background:  #3533cd ;
+			
+	}
+
+	#seta-a{
+		position: relative;
+		left: -30px;
+	}
+
+
+
+
+
+
+
+		} 
+
+@media (min-width: 768px) and (max-width: 991px) { 
+
+		#img-contato{
+			
+			width: 0.1px;
+
+		}
 
 		#social-1 {
 			position: relative;
@@ -1300,6 +1642,8 @@ footer ul li {
 			
 			position: relative;
 			left: 1px;
+			
+			width: 100px;
 
 		}
 
@@ -1333,7 +1677,7 @@ footer ul li {
 		}
 
 		.menu-dropdown{
-			border: solid 1px red;
+			
 			width: 50px;
 			position: relative;
 			right: 100px;
@@ -1351,12 +1695,123 @@ footer ul li {
 			left: 190px;
 		}
 
+		#nav-link-index{
+
+			
+			position: relative;
+			width: 50px;
+			left: 210px;
+
+		}
+
+		#btn-1 {
+			position: relative;
+			left: 80px;
+			top: 200px;
+		}
+
+		#btn-2{
+			position: relative;
+			right: 20px;
+			top: 155px;
+		}
+
+		#btn-3{
+			position: relative;
+			right: 60px;
+			
+		}
+
+			.divisor-descricao{
+	position: relative;
+	top: 40px;
+	right: -10px;
+	
+	}
+
+	#container-descricao,  .divisor-descricao {
+	  
+	  display: flex;
+	  flex-direction: column;
+	  display: table;
+	} 
+
+	#desc-texto {
 		
+		display: grid;
+		grid-template-columns: 650px 80px;
 
 
 	}
 
+	#container-price{
+		
+		display: grid;
+		grid-template-columns: 200px 100px;
+		height: 80px;
+
+	}
+
+	.coracao {
+		
+		position: relative;
+		left: 370px;
+		top: -60px;
+
+
+		
+	}
+
+	#area-main{
+		
+		letter-spacing: -1px;
+	}
+
+	/
+
+	::-webkit-scrollbar{
+		
+		background-color: rgb(32,32,32);
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 8px;
+
+	}
+
+	::-webkit-scrollbar-thumb{
+		background:  #3533cd ;
+			
+	}
+
+
+	#seta-a{
+		position: relative;
+		left: -20px;
+		
+	}
+
+	.sub-menu{
+		
+		position: relative;
+		right: 100px;
+	}
+
+
+			
+
+
+		}
+
 @media (min-width: 992px) and (max-width: 1199.98px) { 
+
+	#img-contato{
+			
+			width: 300px;
+			margin-right: 40px;
+
+
+			
+
+		}
 
 	#social-1 {
 			position: relative;
@@ -1385,7 +1840,7 @@ footer ul li {
 
 		.logo {
 			position: relative;
-			left: 220px;
+			left: 155px;
 		}
 
 		.main-menu {
@@ -1404,14 +1859,430 @@ footer ul li {
 		.nav-item {
 			
 			position: relative;
-			left: -100px;
+			left: -50px;
 
 		}
 
+		#separador {
+			
+			position: relative;
+			left: -30px;
+
+		}
+
+		#nav-link-index{
+
+			
+			position: relative;
+			
+
+		}
+
+		#btn-1 {
+			position: relative;
+			left: -10px;
+			top: 60px;
+			}
+
+		#btn-2{
+			position: relative;
+			left: -5px;
+			top: 60px;
+		}
+
+			.divisor-descricao{
+	position: relative;
+	
+	right: 80px;
+	
+	}
+
+	#container-descricao,  .divisor-descricao {
+	  
+	  display: flex;
+	  flex-direction: row;
+	  display: table;
+	} 
+
+
+	#seta-a{
+		position: relative;
+		left: 130px;
+		top: 20px;
+	}
+
+	#separador {
+		display: none;
+	}
 
 
 
- }
+
+	 }
 
 @media (min-width: 1200px) {  }
 
+
+
+	/* */
+
+
+	.card-img-chacaras-main{
+		width: 600px;
+		height: 400px;
+	}
+
+	.card-img-chacaras {
+		
+
+		width: 355px;
+		margin-left: -23px;
+			transform: scaleX(0.7); /* Reduz a largura em 10% (ajuste conforme necessário) */
+		
+	}
+
+	.card-img-chacaras-2 {
+		
+
+		width: 355px;
+		margin-left: -3px;
+		transform: scaleX(0.7); /* Reduz a largura em 10% (ajuste conforme necessário) */
+		
+	}
+
+	.card-img-chacaras-4 {
+		
+
+		width: 355px;
+		margin-left: -3px;
+		transform: scaleX(0.7); /* Reduz a largura em 10% (ajuste conforme necessário) */
+		
+	}
+
+	#price-chacara{
+		margin-left: 20px;
+		padding-top: 10px;
+		font-size: 25px;
+		font-weight: bold;
+	}
+
+
+
+	#btn-3 {
+
+		font-weight: bold; 
+		background-color: rgb(109, 36, 255);
+		color: white;
+		letter-spacing: 1px;
+		margin-left: 20px;
+		margin-top: 5px;
+		width: 120px;
+
+	}
+
+
+	.coracao {
+		margin-left: 270px;
+		
+	}
+
+
+	#Layer_1 {
+		position: relative;
+		top: -1px;
+	}
+
+	#svg-bath{
+		position: relative;
+		top: -2px;
+		left: -3px;
+	}
+
+	#desc-texto {
+		margin-left: -15px;
+	}
+
+
+
+	#meu-svg:hover{
+
+		cursor: pointer;
+	}
+
+	#minha-classe {
+	  margin: 0 -5px; /* Ajuste o valor conforme necessário */
+	}
+
+
+	#area-1{
+		position: relative;
+		top: 1px;
+		left: 10px;
+	}
+
+	#area-2{
+		position: relative;
+		
+		left: 30px;
+	}
+
+	#area-3{
+		position: relative;
+		left: 50px;
+	}
+
+	#area-4{
+		position: relative;
+		left: 70px;
+	}
+
+	#area-main {
+		display: flex;
+		flex-direction: row;
+		margin: -5px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+/**********************************************************************************************************
+**********************************************************************************************************
+*/
+
+#container-main-desc {
+	
+}
+
+.divisor-descricao{
+	
+	margin-left: 130px;
+	margin-top: -35px;
+}
+
+#btn-4{
+	font-weight: bold; 
+	background-color: rgb(109, 36, 255);
+	position: relative;
+	color: white;
+	width: 150px;
+	height: 50px;
+	margin: 5px;
+}
+#btn-5{
+	font-weight: bold; 
+	background-color: rgb(109, 36, 255);
+	position: relative;
+	color: white;
+	width: 160px;
+	height: 50px;
+	margin: 5px;
+}
+
+.email-name {
+	position: relative;
+	height: 50px;
+	width: 154px;
+	font-size: 20px;
+	margin-bottom: 10px;
+	background-color: rgb(225,225,225) ;
+	padding-left: 10px;
+	border: none;
+	margin: 5px;
+	background-repeat: no-repeat;
+	background-position: 10px;
+	border-radius: 7px;
+}
+
+.email-name-1{
+
+	position: relative;
+	height: 50px;
+	width: 318px;
+	font-size: 20px;
+	background-color: rgb(225,225,225) ;
+	padding-left: 10px;
+	border: none;
+	margin: 5px;
+	background-repeat: no-repeat;
+	background-position: 10px;
+	border-radius: 7px;
+
+}
+
+.politica-privacidade{
+	font-size: 10px;
+	position: relative;
+	
+}
+
+.divisor-politica:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#btn-6{
+	font-weight: bold; 
+	background-color: rgb(109, 36, 255);
+	position: relative;
+	top: -12px;
+	border-radius: 14px;
+	color: white;
+	width: 320px;
+	height: 50px;
+	margin: 5px;
+}
+
+#separador-texto{
+	margin-top: -18px;
+	margin-left: 70px;
+}
+
+/***************************************************************************************************/
+
+
+/* ESQUECI MINHA SENHA*/
+
+#container-esqueci-senha {
+
+	width: 400px;
+	height: 500px;
+	background-color: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 120px;
+	text-align: center;
+}
+
+#email-esqueci-senha{
+
+	position: relative;
+	bottom: 140px;
+	right: 136px;
+	
+}
+
+#input-voltar {
+	position: relative;
+
+	top: 20px;
+
+}
+
+#input-voltar input {
+	width: 170px;
+	
+}
+
+#btn-7{
+
+	font-weight: bold; 
+	position: absolute;
+	border-radius: 0;
+	width: 150px;
+	height: 50px;
+	left: 125px;
+	top: 30px;
+	background-color: black;
+	color: white;
+	letter-spacing: 1px;
+
+
+}
+
+/* PARTE DO CONTATO */
+
+#container-contato {
+
+	width: 1100px;
+	height: 600px;
+	background-color: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 120px;
+	text-align: center;
+}
+
+.campo-texto{
+	width: 500px;
+}
+
+#contato{
+	font-weight: bold;
+
+}
+
+.nome-contato{
+
+  height: 58px;
+	width: 80%;
+	font-size: 20px;
+	margin-bottom: 20px;
+	background-color: rgb(225,225,225) ;
+	padding-left: 20px;
+	border: none;
+	background-repeat: no-repeat;
+	background-position: 10px;
+	border-radius: 10px;
+
+}
+
+.email-contato{
+
+  height: 58px;
+	width: 80%;
+	font-size: 20px;
+	margin-bottom: 20px;
+	background-color: rgb(225,225,225) ;
+	padding-left: 20px;
+	border: none;
+	background-repeat: no-repeat;
+	background-position: 10px;
+	border-radius: 10px;
+
+}		
+
+#mensagem-contato{
+
+	height: 220px;
+	position: relative;
+	width: 400px;
+	font-size: 20px;
+	margin-bottom: 20px;
+	background-color: rgb(225,225,225) ;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: none;
+	background-repeat: no-repeat;
+	background-position: 10px;
+	border-radius: 10px;
+}
+
+.enviar-contato {
+
+	height: 60px;
+	width: 330px;
+	position: relative;
+	
+	cursor: pointer;
+	color: white;
+	background: black;
+	border: none;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+
+
+#img-contato{
+	display: flex;
+	position: relative;
+	top: -500px;
+	left: 650px;
+}
+
+#img-contato:hover{
+		transform: scale(1.09);
+	transition: .8s;
+	cursor: pointer;
+}
